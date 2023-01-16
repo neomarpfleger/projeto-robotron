@@ -15,18 +15,14 @@ arrow function(função de setas)
 }
 */
 
-//document.querySelector("#robotron").addEventListener("click", oi)
+const subtrair = document.querySelector("#subtrair")
+const somar = document.querySelector("#somar")
+const braco = document.querySelector("#braco")
 
-document.querySelector("#robotron").addEventListener("click", () =>{
-
-    console.log("full stack")
-    console.log("oi, bem vindo!")
-    
+somar.addEventListener("click", () =>{
+    braco.value = parseInt(braco.value) + 1
 })
 
-function oi (nome){
-    console.log("oi " + nome)
-    console.log(", bem vindo!")
-}
-
-oi()
+subtrair.addEventListener("click", () =>{
+    braco.value = parseInt(braco.value) - 1
+})
