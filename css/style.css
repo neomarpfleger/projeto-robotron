@@ -35,6 +35,13 @@ main {
     margin: 0;
     flex-basis: 40%;
     position: relative;
+    left: 2rem;
+}
+
+.robotronRed{
+    position: relative;
+    right: 42rem;
+    
 }
 
 .robo {
@@ -50,8 +57,8 @@ main {
     font-weight: 500;
     font-size: 130px;
     position: absolute;
-    bottom: 7rem;
-    left: -3rem;
+    bottom: 3rem;
+    left: 20rem;
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;

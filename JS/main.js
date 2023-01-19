@@ -54,7 +54,6 @@ const pecas = {
     }
 }
 
-
 controle.forEach( (elemento)=>{
     elemento.addEventListener("click", (evento)=>{
         manipulaDados(evento.target.dataset.controle,evento.target.parentNode)
@@ -63,7 +62,6 @@ controle.forEach( (elemento)=>{
 })
 //Toda vez que for um input pegar o "value".
 //Toda vez que for um texto usar o "textContent" para pegar o texto.
-
 
 function manipulaDados(operacao, controle){
     const peca = controle.querySelector("[data-contador]")
