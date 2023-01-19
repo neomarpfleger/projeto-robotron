@@ -35,12 +35,14 @@ main {
     margin: 0;
     flex-basis: 40%;
     position: relative;
-    left: 2rem;
+    left: 3rem;
+    margin-top: 2rem;
 }
 
 .robotronRed{
     position: relative;
-    right: 42rem;
+    right: 49rem;
+    margin-bottom: -7rem;
     
 }
 
@@ -58,7 +60,7 @@ main {
     font-size: 130px;
     position: absolute;
     bottom: 3rem;
-    left: 20rem;
+    left: 19rem;
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -79,7 +81,9 @@ main {
 }
 
 .montador {
-    height: 100%;;
+    width: 23rem;
+    height: 100%;
+    display: inline-table;
 }
 
 .montador-conteudo {
