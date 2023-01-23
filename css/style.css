@@ -36,14 +36,7 @@ main {
     flex-basis: 40%;
     position: relative;
     left: 3rem;
-    margin-top: 2rem;
-}
-
-.robotronRed{
-    position: relative;
-    right: 49rem;
-    margin-bottom: -7rem;
-    
+    margin-top: 1rem;
 }
 
 .robo {
@@ -51,7 +44,15 @@ main {
     z-index: 1;
     position: absolute;
     left: -20%;
-    top: -5%;
+    top: -4%;
+}
+
+.roboRed{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    left: -12%;
+    top: 0;
 }
 
 .titulo {
@@ -59,8 +60,8 @@ main {
     font-weight: 500;
     font-size: 130px;
     position: absolute;
-    bottom: 3rem;
-    left: 19rem;
+    bottom: 8rem;
+    right: -55rem;
     line-height: 0.8;
     writing-mode: vertical-rl;
     text-orientation: mixed;
