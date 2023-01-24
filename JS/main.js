@@ -80,8 +80,8 @@ function atualizaEstatisticas(peca){
 
 const bolas = document.querySelectorAll("[data-cor]");
 bolas.forEach( (evento)=>{
-    evento.addEventListener("onclick", ()=>{
-        console.log("funcionou")
+    evento.addEventListener("click", ()=>{
+        console.log(evento.classList)
     })
 })
 
