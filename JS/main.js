@@ -15,9 +15,6 @@ arrow function(função de setas)
 }
 */
 
-
-
-
 const controle = document.querySelectorAll("[data-controle]");
 const estatistica = document.querySelectorAll("[data-estatistica]");
 const pecas = {
@@ -81,8 +78,13 @@ function atualizaEstatisticas(peca){
     
 }
 
-const bolas = document.querySelector(".bolls")
-console.log(bolas)
+const bolas = document.querySelectorAll("[data-cor]");
+bolas.forEach( (evento)=>{
+    evento.addEventListener("onclick", ()=>{
+        console.log("funcionou")
+    })
+})
+
 
 
 
