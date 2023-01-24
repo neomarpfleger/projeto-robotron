@@ -81,6 +81,9 @@ function atualizaEstatisticas(peca){
     
 }
 
+const bolas = document.querySelector(".bolls")
+console.log(bolas)
+
 
 
 
