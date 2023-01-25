@@ -80,10 +80,24 @@ function atualizaEstatisticas(peca){
 
 const bolas = document.querySelectorAll("[data-cor]");
 bolas.forEach( (evento)=>{
-    evento.addEventListener("click", ()=>{
-        console.log(evento.classList)
+    evento.addEventListener("click", ()=> {
+        document.querySelector("#funciona").removeAttribute("class", "preto")
     })
 })
+
+/*const bolas = document.querySelectorAll("[data-cor]");
+const robo = document.querySelector(".robo")
+bolas.forEach( (evento)=>{
+    evento.addEventListener("click", ()=>{
+        if(robo.style.display === "block"){
+            robo.style.display.remove
+        }else{
+            robo.style.display = "none"
+        }
+    })
+})*/
+
+
 
 
 

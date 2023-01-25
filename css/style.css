@@ -47,6 +47,30 @@ main {
     top: -4%;
 }
 
+.vermelho {
+    display: none;
+}
+
+.rosa {
+    display: none;
+}
+
+.amarelo {
+    display: none;
+}
+
+.azul {
+    display: none;
+}
+
+.branco {
+    display: none;
+}
+
+.preto {
+    display: none;
+}
+
 .robo2{
     position: absolute;
     z-index: 1;
