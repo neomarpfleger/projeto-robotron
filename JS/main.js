@@ -70,36 +70,14 @@ function manipulaDados(operacao, controle){
     }
 }
 
-function atualizaEstatisticas(peca){
+function atualizaEstatisticas(peca, controle){
     estatistica.forEach( (elemento)=>{
-        elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
-        
-    })
-    
-}
-
-const bolas = document.querySelectorAll("[data-cor]");
-bolas.forEach( (evento)=>{
-    evento.addEventListener("click", ()=> {
-        document.querySelector("#funciona").removeAttribute("class", "preto")
-    })
-})
-
-/*const bolas = document.querySelectorAll("[data-cor]");
-const robo = document.querySelector(".robo")
-bolas.forEach( (evento)=>{
-    evento.addEventListener("click", ()=>{
-        if(robo.style.display === "block"){
-            robo.style.display.remove
-        }else{
-            robo.style.display = "none"
+        if(controle ==="+"){
+            elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
+        } else{
+            elemento.textContent = parseInt(elemento.textContent) - pecas[peca][elemento.dataset.estatistica]
         }
     })
-})*/
+}
 
-
-
-
-
-
-
+console.log(controle)
