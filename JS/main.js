@@ -15,6 +15,9 @@ arrow function(função de setas)
 }
 */
 
+var robotron = document.querySelectorAll("#robotron")
+
+/*============codigo original=================*/
 const controle = document.querySelectorAll("[data-controle]");
 const estatistica = document.querySelectorAll("[data-estatistica]");
 const pecas = {
@@ -79,5 +82,12 @@ function atualizaEstatisticas(peca, controle){
         }
     })
 }
+console.log(botaoCor)
+botaoCor.addEventListener("click", ()=>{
+    alterarCor(elemento.target.dataset)
+})
 
-console.log(controle)
+function alterarCor(elemento){
+    const botaoCor = document.querySelector("[data-cor]")
+    console.log(elemento.target.dataset)
+}

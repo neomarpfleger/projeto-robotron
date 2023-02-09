@@ -223,27 +223,15 @@ main {
     margin: 0;
 }
 
-.bolls {
-    width: 300px;
+.botaoCor {
+    width: 100px;
+    height: 20px;
     position: absolute;
     display: flex;
-    bottom: 1rem;
+    bottom: 5rem;
     right: 32rem;
-    gap: 0.8rem;
-    display: none;
-}
-
-.bola-cor {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    color: var(--main-cinza);
-    font-size: 4em;
-    text-align: center;
-    border: 3px solid var(--main-cinza);
     cursor: pointer;
 }
-
 
 .estatistica:nth-child(2n) .estatistica-titulo {
     order: 2;
