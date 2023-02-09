@@ -15,8 +15,6 @@ arrow function(função de setas)
 }
 */
 
-var robotron = document.querySelectorAll("#robotron")
-
 /*============codigo original=================*/
 const controle = document.querySelectorAll("[data-controle]");
 const estatistica = document.querySelectorAll("[data-estatistica]");
@@ -82,12 +80,24 @@ function atualizaEstatisticas(peca, controle){
         }
     })
 }
-console.log(botaoCor)
-botaoCor.addEventListener("click", ()=>{
-    alterarCor(elemento.target.dataset)
-})
 
-function alterarCor(elemento){
-    const botaoCor = document.querySelector("[data-cor]")
-    console.log(elemento.target.dataset)
+currenteImageIndex = 0;
+const botaoCor = document.querySelector(".botaoCor");
+var robotron = document.querySelectorAll("#robotron");
+max = robotron.length;
+
+function trocar(){
+    robotron[currenteImageIndex]
+    .classList.remove("selecionado")
+
+    currenteImageIndex++
+
+    if(currenteImageIndex >= max)
+        currenteImageIndex = 0
+
+
+    robotron[currenteImageIndex]
+        .classList.add("selecionado")
 }
+
+botaoCor.addEventListener("click", trocar)

@@ -40,11 +40,16 @@ main {
 }
 
 .robo {
+    opacity: 0;
     height: 110%;
     z-index: 1;
     position: absolute;
     left: -20%;
     top: -4%;
+}
+
+img.selecionado{
+    opacity: 1;
 }
 
 .rosa {
