@@ -56,6 +56,7 @@ controle.forEach( (elemento)=>{
     elemento.addEventListener("click", (evento)=>{
         manipulaDados(evento.target.dataset.controle,evento.target.parentNode)
         atualizaEstatisticas(evento.target.dataset.peca)
+        console.log(controle)
     })
 })
 //Toda vez que for um input pegar o "value".
@@ -71,15 +72,15 @@ function manipulaDados(operacao, controle){
     }
 }
 
-function atualizaEstatisticas(peca, controle){
+function atualizaEstatisticas(peca){
     estatistica.forEach( (elemento)=>{
-        if(controle ==="+"){
-            elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
-        } else{
-            elemento.textContent = parseInt(elemento.textContent) - pecas[peca][elemento.dataset.estatistica]
-        }
+    
+        elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
+
+
     })
 }
+
 
 currenteImageIndex = 0;
 const botaoCor = document.querySelector(".botaoCor");

@@ -52,26 +52,6 @@ img.selecionado{
     opacity: 1;
 }
 
-.rosa {
-    display: none;
-}
-
-.amarelo {
-    display: none;
-}
-
-.azul {
-    display: none;
-}
-
-.branco {
-    display: none;
-}
-
-.preto {
-    display: none;
-}
-
 .titulo {
     transform: rotate(180deg);
     font-weight: 500;
