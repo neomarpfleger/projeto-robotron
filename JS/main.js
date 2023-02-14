@@ -55,7 +55,8 @@ const pecas = {
 controle.forEach( (elemento)=>{
     elemento.addEventListener("click", (evento)=>{
         manipulaDados(evento.target.dataset.controle,evento.target.parentNode)
-        atualizaEstatisticas(evento.target.dataset.peca)
+        atualizaEstatisticas(evento.target.dataset.controle, evento.target.dataset.peca)
+        console.log(elemento)
     })
 })
 //Toda vez que for um input pegar o "value".
@@ -70,14 +71,23 @@ function manipulaDados(operacao, controle){
     } else {
         peca.value = parseInt(peca.value) + 1
     }
-    console.log(controle)
 }
-
+/* Codigo abaixo é o original
 function atualizaEstatisticas(peca){
     estatistica.forEach( (elemento)=>{
     
         elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
 
+    })
+}*/
+
+function atualizaEstatisticas(operacao, peca){
+    estatistica.forEach( (elemento)=>{
+        if(operacao === "+"){
+            elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
+        }else {
+            elemento.textContent = parseInt(elemento.textContent) - pecas[peca][elemento.dataset.estatistica] 
+        }
     })
 }
 
